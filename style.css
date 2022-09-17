@@ -1,0 +1,43 @@
+.app{
+    display: grid;
+    width: 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, 30px);
+    margin: 0 auto;
+    grid-template-areas: 
+    "res res res res"
+    "9 8 7 reset"
+    "6 5 4 reset"
+    "3 2 1 reset"
+    "0 dot plus minus"
+    "equal equal times div"
+    ;
+    border: 2px solid teal;
+    border-radius: 4px;
+}
+h3{
+    font-size: 2rem;
+    grid-area: res;
+    margin: 7px 10px 0 0;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 10;
+}
+#equal{
+    grid-area: equal;
+}
+#clear{
+    grid-area: reset;
+}
+
+button{
+    background-color: teal;
+    border:none;
+    border-radius:3px;
+    margin:1px;
+    transition: 0.2s;
+    color: white;
+}
+button:hover{
+    opacity:0.6;
+}
